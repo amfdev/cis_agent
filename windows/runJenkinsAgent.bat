@@ -1,9 +1,13 @@
 c:
-cd c:\JN
+cd c:\JN\cis_agent\windows
+
+curl -k https://amf.cts.luxoft.com/jnlpJars/agent.jar --output agent.jar
+
 
 :up 
 
-rem replace this line with java -jar slave.jar -jnlpUrl ...
+rem insert here java -jar agent.jar -jnlpUrl XXX -secret YYY -workDir "c:\JN"
+
 
 echo reconnecting
 goto up
